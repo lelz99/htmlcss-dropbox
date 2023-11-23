@@ -6,8 +6,179 @@
     box-sizing: border-box;
 }
 
+/* Utils */
+
+.flex{
+    display: flex;
+}
+
+.border{
+    border: 2px dashed black;
+}
+
+.padding{
+    padding: 20px;
+}
+
 /* Generics */
 
 body{
     font-family: 'Open Sans', sans-serif;
+    word-wrap: break-word;
+}
+
+.container{
+   max-width: 1080px;
+   margin: 0 auto;
+}
+
+.content{
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 100px 0;
+}
+
+footer{
+    background-color: black;
+    height: 400px;
+}
+
+/* Header */
+
+/* Navbar */
+
+nav{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left{
+    background-color: yellow;
+    width: 300px;
+}
+
+.navbar-right{
+    background-color: yellow;
+    width: 300px;
+}
+
+/* Main Header */
+
+header{
+    padding-top: 200px;
+    background-color: rgb(180, 208, 231);
+}
+
+h1{
+
+    margin-bottom: 50px;
+}
+
+.small-box{ 
+    height: 300px;
+    flex-basis: 40%;
+    background-color: pink;
+}
+
+.large-box{
+    height: 300px;
+    flex-basis: 60%;
+    background-color: blue;
+}
+
+/* Main */
+
+/* Section Business */
+
+
+.row{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px
+}
+
+.col{
+    height: 500px;
+    background-color: red;
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;    
+}
+
+.card{
+    background-color: green;
+    height: 400px;
+}
+
+/* Section partner */
+
+/* Sections operations */
+
+/* Section Team */
+
+.team{
+    height: 100px;
+    background-color: blue;
+}
+
+/* Section Company-Partner */
+
+.col-company{
+flex-basis: calc(100% / 2);
+background-color: red;
+}
+
+.side{
+    flex-basis: calc(100% / 3);
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center{
+    height: 500px;
+    flex-grow: 1;
+}
+
+/* Section Azienza */
+
+.azienda{
+    background-color: rgb(180, 208, 231);
+}
+
+/*  Section Faq */
+
+.faq{
+    height: 400px;
+    background-color: yellow;
+}
+
+.faq-row{
+    height: 100px;
+    background-color: brown;
+}
+
+/* Footer */
+
+.row-footer{
+    height: 250px;
+    background-color: blue;
+    display: flex;
+} 
+
+.col-footer{
+    background-color: green;
+    flex-basis: calc(100% / 5);
+    height: 200px;
 }
