@@ -8,6 +8,20 @@
 
 /* Utils */
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.content{
+    max-width: 920px;
+    margin: 0 auto;
+}
+
 .flex{
     display: flex;
 }
@@ -22,23 +36,21 @@
 
 /* Generics */
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    word-wrap: break-word;
+ul{
+    list-style: none;
 }
 
-.container{
-   max-width: 1080px;
-   margin: 0 auto;
-}
-
-.content{
-    max-width: 920px;
-    margin: 0 auto;
+a{
+    color: black;
+    text-decoration: none;
 }
 
 section{
     padding: 100px 0;
+}
+
+img{
+    display: block;
 }
 
 footer{
@@ -50,32 +62,33 @@ footer{
 
 /* Navbar */
 
-nav{
-    background-color: red;
-    position: fixed;
+#main-header{
+    position: sticky;
     top: 0;
-    right: 0;
     left: 0;
-}
-
-.navbar{
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
 }
 
-.navbar-left{
-    background-color: yellow;
-    width: 300px;
+#main-header  ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.navbar-right{
-    background-color: yellow;
-    width: 300px;
+.btn-small{
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(0, 97, 255);
 }
 
 /* Main Header */
 
-header{
+.jumbotron{
     padding-top: 200px;
     background-color: rgb(180, 208, 231);
 }
