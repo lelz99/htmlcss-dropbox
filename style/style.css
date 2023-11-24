@@ -13,13 +13,27 @@ body{
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .content{
     max-width: 920px;
     margin: 0 auto;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(0, 97, 255);
+    display: inline-block;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-70{
+    margin-bottom: 70px;
 }
 
 .flex{
@@ -51,6 +65,7 @@ section{
 
 img{
     display: block;
+    max-width: 100%;
 }
 
 footer{
@@ -82,44 +97,43 @@ footer{
 
 .btn-small{
     padding: 5px 10px;
-    color: white;
-    background-color: rgb(0, 97, 255);
-}
-
-/* Main Header */
-
-.jumbotron{
-    padding-top: 200px;
-    background-color: rgb(180, 208, 231);
-}
-
-h1{
-
-    margin-bottom: 50px;
-}
-
-.small-box{ 
-    height: 300px;
-    flex-basis: 40%;
-    background-color: pink;
-}
-
-.large-box{
-    height: 300px;
-    flex-basis: 60%;
-    background-color: blue;
 }
 
 /* Main */
 
+/* Jumbotron */
+
+.jumbotron{
+    padding-top: 80px;
+    margin-bottom: 100px;
+    background-color: rgb(180, 208, 231);
+    height: 750px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.btn-large{
+    padding: 10px 20px;
+}
+
+.small-box{  
+    flex-basis: 30%;
+}
+
+.large-box{
+    flex-basis: 70%;
+}
+
+
 /* Section Business */
 
-
 .row{
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -24px
 }
 
 .col{
