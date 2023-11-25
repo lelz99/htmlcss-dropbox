@@ -18,7 +18,7 @@ body{
 }
 
 .content{
-    max-width: 920px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -28,25 +28,43 @@ body{
     display: inline-block;
 }
 
-.mb-30{
-    margin-bottom: 30px;
-}
-
-.mb-70{
-    margin-bottom: 70px;
-}
-
 .flex{
     display: flex;
 }
 
 .border{
-    border: 2px dashed black;
+    border: 1px solid rgb(208, 208, 211);
 }
 
 .padding{
     padding: 20px;
 }
+
+/* Distanze */
+.mb-10{
+    margin-bottom: 10px;
+}
+ 
+.mb-20{
+     margin-bottom: 20px;
+}
+ 
+.mb-30{
+     margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+} 
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-70{
+     margin-bottom: 70px;
+}
+
 
 /* Generics */
 
@@ -59,8 +77,20 @@ a{
     text-decoration: none;
 }
 
+.link{
+    margin-left: 5px;
+    color: blue;
+    text-decoration:underline ;
+}
+
+.line{
+    width: 50px;
+    margin: 40px 0;
+    border-bottom: 1px solid rgb(180, 208, 231);
+}
+
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 img{
@@ -103,6 +133,11 @@ footer{
 
 /* Jumbotron */
 
+.row-jumbotron{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .jumbotron{
     padding-top: 80px;
     margin-bottom: 100px;
@@ -117,7 +152,7 @@ h1{
 }
 
 .btn-large{
-    padding: 10px 20px;
+    padding: 15px 25px;
 }
 
 .small-box{  
@@ -131,26 +166,110 @@ h1{
 
 /* Section Business */
 
-.row{
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgb(208, 208, 211);
+}
+
+i{
+    margin-right: 5px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.mese{
+    color: rgb(102, 102, 102);
+}
+
+h5{
+    font-size: 15px;
+}
+
+
+li{
+    margin: 20px 0;
+}
+
+.row-business{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .col{
-    height: 500px;
-    background-color: red;
-    flex-basis: calc(100% / 3);
-    flex-grow: 1;    
+    flex-basis: calc(100% / 3 - 60px / 3);  
 }
 
 .card{
-    background-color: green;
-    height: 400px;
+    padding: 30px;
+}
+
+.full-col{
+    flex-basis: 100%;
+}
+
+.full-card{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-left{
+    flex-basis: 70%;
+}
+
+.card-right{
+    flex-basis: 30%;
+
+}
+
+.btn-xl{
+    margin-left: 30px;
+    padding: 15px 25px;
+}
+
+.btn-contattaci{
+    padding: 15px 80px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.fa-check{
+    color: #0061ff;
 }
 
 /* Section partner */
 
+
+
 /* Sections operations */
+.row-operations{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-operations{
+    height: 500px;
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;   
+}
 
 /* Section Team */
 
@@ -160,6 +279,7 @@ h1{
 }
 
 /* Section Company-Partner */
+
 
 .col-company{
 flex-basis: calc(100% / 2);
