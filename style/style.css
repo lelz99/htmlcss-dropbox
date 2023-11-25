@@ -37,7 +37,7 @@ body{
 }
 
 .padding{
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Distanze */
@@ -65,6 +65,10 @@ body{
      margin-bottom: 70px;
 }
 
+
+.mt-50{
+    margin-top: 50px;
+}
 
 /* Generics */
 
@@ -155,11 +159,11 @@ h1{
     padding: 15px 25px;
 }
 
-.small-box{  
+.col-30{  
     flex-basis: 30%;
 }
 
-.large-box{
+.col-70{
     flex-basis: 70%;
 }
 
@@ -257,7 +261,24 @@ li{
 
 /* Section partner */
 
+.partner{
+    display: flex;
+}
 
+.col-40{
+    flex-basis: 40%;
+    padding: 50px;
+}
+
+.col-60{
+    flex-basis: 60%;
+}
+
+.btn-partner{
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
 
 /* Sections operations */
 .row-operations{
