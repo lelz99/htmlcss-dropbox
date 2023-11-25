@@ -284,12 +284,16 @@ li{
 .row-operations{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .col-operations{
-    height: 500px;
     flex-basis: calc(100% / 3);
-    flex-grow: 1;   
+    padding: 15px;
+}
+
+.card-operations{
+  font-size: 1.2rem;
 }
 
 /* Section Team */
