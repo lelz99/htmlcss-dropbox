@@ -104,7 +104,7 @@ img{
 
 footer{
     background-color: black;
-    height: 400px;
+    padding: 100px 0 50px;
 }
 
 /* Header */
@@ -175,7 +175,16 @@ h2{
     font-size: 40px;
 }
 
-h3{
+.col  > h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgb(208, 208, 211);
+}
+
+.full-col > h3 {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -243,7 +252,7 @@ li{
 }
 
 .btn-xl{
-    margin-left: 30px;
+    margin-left: 35px;
     padding: 15px 25px;
 }
 
@@ -298,35 +307,59 @@ li{
 
 /* Section Team */
 
-.team{
-    height: 100px;
-    background-color: blue;
+.team > h3{
+    font-size: 50px;
+}
+
+.team > a{
+    font-size: 1.2rem;
 }
 
 /* Section Company-Partner */
-
-
+  
 .col-company{
-flex-basis: calc(100% / 2);
-background-color: red;
+    flex-basis: calc(100% / 2);
+
 }
 
 .side{
     flex-basis: calc(100% / 3);
-    height: 500px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .center{
+    padding: 70px;
     height: 500px;
-    flex-grow: 1;
+   
+}
+
+#designit{
+    width: 50%;
 }
 
 /* Section Azienza */
 
 .azienda{
     background-color: rgb(180, 208, 231);
+}
+
+.row-azienda{
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+}
+
+.row-azienda > h2 {
+    font-size: 50px;
+}
+
+.btn-azienda{
+    text-align: center;
+    margin-left: 35px;
+    padding: 15px 40px;
+    background-color: white;
+    display: inline-block;
 }
 
 /*  Section Faq */
@@ -344,13 +377,35 @@ background-color: red;
 /* Footer */
 
 .row-footer{
-    height: 250px;
-    background-color: blue;
     display: flex;
 } 
 
 .col-footer{
-    background-color: green;
+    color: white;
     flex-basis: calc(100% / 5);
-    height: 200px;
+}
+
+h6{
+    font-size: 1.8rem;
+}
+
+.c-white{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.line-footer{
+    border-bottom: 1px solid white;
+    width: 150px;
+    margin: 40px 0;
+}
+
+.c-gray{
+    color: #999999;
+}
+
+.fa-sort-up{
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: middle;
 }
