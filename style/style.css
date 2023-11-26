@@ -112,6 +112,7 @@ footer{
 /* Navbar */
 
 #main-header{
+    z-index: 1;
     position: sticky;
     top: 0;
     left: 0;
@@ -175,7 +176,7 @@ h2{
     font-size: 40px;
 }
 
-.col  > h3{
+.col > h3{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -347,31 +348,43 @@ li{
 .row-azienda{
     padding: 120px 0;
     display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .row-azienda > h2 {
     font-size: 50px;
+    color: #61082b;
 }
 
 .btn-azienda{
     text-align: center;
-    margin-left: 35px;
-    padding: 15px 40px;
+    padding: 15px 45px;
     background-color: white;
-    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 130px;
 }
 
 /*  Section Faq */
 
-.faq{
-    height: 400px;
-    background-color: yellow;
+.fa-chevron-down{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.faq > h3 {
+    padding: 50px 0;
+    font-size: 40px;
+    border-bottom: 1px solid #999999;
 }
 
 .faq-row{
-    height: 100px;
-    background-color: brown;
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+    padding: 50px 0;
 }
 
 /* Footer */
