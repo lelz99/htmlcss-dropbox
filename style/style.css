@@ -22,22 +22,28 @@ body{
     margin: 0 auto;
 }
 
-.btn{
-    color: white;
-    background-color: rgb(0, 97, 255);
-    display: inline-block;
-}
-
-.flex{
-    display: flex;
-}
-
 .border{
-    border: 1px solid rgb(208, 208, 211);
+    border: 1px solid rgb(180, 208, 231);;
 }
 
-.padding{
-    padding: 30px;
+.bold{
+    font-weight: bold;
+}
+
+.link{
+    margin-left: 5px;
+    color: blue;
+    text-decoration:underline ;
+}
+
+.line{
+    width: 50px;
+    margin: 40px 0;
+    border-bottom: 1px solid rgb(180, 208, 231);
+}
+
+.c-gray{
+    color: #999999;
 }
 
 /* Distanze */
@@ -61,10 +67,13 @@ body{
     margin-bottom: 50px;
 }
 
+.mb-60{
+    margin-bottom: 60px;
+}
+
 .mb-70{
      margin-bottom: 70px;
 }
-
 
 .mt-50{
     margin-top: 50px;
@@ -76,21 +85,16 @@ ul{
     list-style: none;
 }
 
+li{
+    margin: 20px 0;
+}
+
 a{
-    color: black;
     text-decoration: none;
 }
 
-.link{
-    margin-left: 5px;
-    color: blue;
-    text-decoration:underline ;
-}
-
-.line{
-    width: 50px;
-    margin: 40px 0;
-    border-bottom: 1px solid rgb(180, 208, 231);
+i{
+    margin-right: 5px;
 }
 
 section{
@@ -106,6 +110,34 @@ footer{
     background-color: black;
     margin-top: 100px;
     padding: 100px 0 50px;
+}
+
+/* Button */
+
+.btn{
+    display: inline-block;
+}
+
+.btn-primary{
+    background-color: rgb(0, 97, 255);
+    color: white;
+}
+
+.btn-secondary{
+    color: black;
+    background-color: white;
+}
+
+.btn-large{
+    padding: 15px 25px;
+}
+
+.btn-small{
+    padding: 5px 15px;
+}
+
+.btn-contattaci{
+    padding: 15px 80px;
 }
 
 /* Header */
@@ -131,10 +163,6 @@ footer{
     gap: 30px;
 }
 
-.btn-small{
-    padding: 5px 10px;
-}
-
 /* Main */
 
 /* Jumbotron */
@@ -157,10 +185,6 @@ h1{
     margin-bottom: 50px;
 }
 
-.btn-large{
-    padding: 15px 25px;
-}
-
 .col-30{  
     flex-basis: 30%;
 }
@@ -173,11 +197,46 @@ h1{
 /* Section Business */
 
 
-h2{
+.business > h2{
     font-size: 40px;
 }
 
-.col > h3{
+.fatturazione{
+    font-size: 14px;
+   display: flex;
+   position: relative;
+   gap: 65px;
+}
+
+.mensile{
+    margin-left: 25px;
+}
+
+.fatturazione::before{
+    content: "";
+    border: 4px solid dodgerblue;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.annuale::before{
+    content: "";
+    border: 2px solid lightgray;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.border > h3{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
@@ -186,38 +245,16 @@ h2{
     border-bottom: 1px solid rgb(208, 208, 211);
 }
 
-.full-col > h3 {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    border-bottom: 1px solid rgb(208, 208, 211);
-}
-
-i{
+h3 > i{
     margin-right: 5px;
 }
 
-h4{
+.card-business > h4{
     font-size: 25px;
 }
 
-.price{
-    font-weight: bold;
-}
-
-.mese{
-    color: rgb(102, 102, 102);
-}
-
-h5{
+.card-business > h5{
     font-size: 15px;
-}
-
-
-li{
-    margin: 20px 0;
 }
 
 .row-business{
@@ -226,11 +263,11 @@ li{
     gap: 30px;
 }
 
-.col{
+.col-business{
     flex-basis: calc(100% / 3 - 60px / 3);  
 }
 
-.card{
+.card-business{
     padding: 30px;
 }
 
@@ -248,22 +285,16 @@ li{
     flex-basis: 70%;
 }
 
+.card-right > .btn-large{
+    margin-left: 35px;
+}
+
 .card-right{
     flex-basis: 30%;
-
 }
 
-.btn-xl{
-    margin-left: 35px;
-    padding: 15px 25px;
-}
-
-.btn-contattaci{
-    padding: 15px 80px;
-}
-
-.bold{
-    font-weight: bold;
+.fa-ul{
+    margin-left: 25px;
 }
 
 .fa-check{
@@ -273,8 +304,7 @@ li{
 /* Section partner */
 
 .partner{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 70px auto 70px;
     display: flex;
 }
 
@@ -283,21 +313,21 @@ li{
     padding: 50px;
 }
 
+.col-40 > .btn-secondary{
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
 .col-60{
     flex-basis: 60%;
 }
 
-.btn-partner{
-    border: 1px solid black;
-    padding: 10px 15px;
-    font-size: 1.2rem;
-}
-
 /* Sections operations */
+
 .row-operations{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -15px 150px;
 }
 
 .col-operations{
@@ -305,118 +335,47 @@ li{
     padding: 15px;
 }
 
-.card-operations{
+.card-operations > p{
   font-size: 1.2rem;
 }
 
-/* Section Team */
-
-.team > h3{
-    font-size: 50px;
-}
-
-.team > a{
-    font-size: 1.2rem;
+.operations > h3{
+    font-size: 40px;
 }
 
 /* Section Company-Partner */
+
+.center{
+    padding: 40px;
+}
+
+.center img{
+    width: 50%;
+}
 
 .company-partner{
     display: flex;
 }
 
 .col-company{
-    flex-basis: calc(100% / 3)
-}
-
-.center{
-    padding: 50px;
-}
-
-#designit-logo{
-    width: 50%;
-}
-
-.side{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
 
 .box-company{
-    flex-basis: 50%;    
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg-img:before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 300px;
+.box-company > img{
+    width: 50%;
+    filter: invert(1);
 }
-
-.bg-designit{
-    background-image: url(../img/designit.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-asu{
-    background-image: url(../img/arizona_state_university.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-uf{
-    background-image: url(../img/university_of_florida.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-topps{
-    background-image: url(../img/topps.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-wbr{
-    background-image: url(../img/world_bicycle_relief.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-hearts{
-    background-image: url(../img/hearst_corp.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-lp{
-    background-image: url(../img/lonely_planet.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
-.bg-cco{
-    background-image: url(../img/clear_channel.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: invert(95%) sepia(1%) saturate(1364%) hue-rotate(148deg) brightness(109%) contrast(98%);
-}
-
 
 .bg-f5f5f5{
     background-color: #f5f5f5;
@@ -470,14 +429,16 @@ li{
     font-size: 50px;
     color: #61082b;
 }
+.row-azienda > .col-30{
+    position: relative;
+}
 
-.btn-azienda{
+.col-30 > .btn-secondary{
     text-align: center;
-    padding: 15px 45px;
-    background-color: white;
     position: absolute;
     right: 0;
-    top: 130px;
+    left: 0;
+    top: 0;
 }
 
 /*  Section Faq */
@@ -513,12 +474,12 @@ li{
     flex-basis: calc(100% / 5);
 }
 
-h6{
+.col-footer > h6{
     font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
-.c-white{
-    font-size: 1.2rem;
+.footer-list a{
     color: white;
 }
 
@@ -526,10 +487,6 @@ h6{
     border-bottom: 1px solid white;
     width: 150px;
     margin: 40px 0;
-}
-
-.c-gray{
-    color: #999999;
 }
 
 .fa-sort-up{
